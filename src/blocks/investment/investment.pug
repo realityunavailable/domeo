@@ -1,0 +1,12 @@
+- var data = [{link: "https://deeper.network/", alt: "deeper", number: 1},{link: "https://casper.network/en/network", alt: "casper", number: 2},{link: "https://www.splytcore.org/", alt: "splytcore", number: 3},{link: "https://compli.fi/", alt: "compli.fi", number: 4},{link: "https://nftify.network/", alt: "nftify", number: 5},{link: "https://rocketvaults.io/", alt: "rocketvaults", number: 6},{link: "https://plasmapay.com/", alt: "plasmapay", number: 7},{link: "https://www.charged.fi/", alt: "charged.fi", number: 8},{link: "https://www.home.stackos.io/", alt: "stackos", number: 9},{link: "https://www.gains-associates.com/", alt: "gains", number: 10},{link: "https://pandora.finance/", alt: "pandora", number: 11},{link: "https://formation.fi/", alt: "formation", number: 12},{link: "https://direct.allynow.com/", alt: "allynow", number: 13},{link: "https://roseon.finance/", alt: "roseon", number: 14},{link: "https://nftrade.com/", alt: "nftrade", number: 15},{link: "https://vera.financial/", alt: "vera", number: 16},{link: "https://beyondfinance.io/", alt: "beyondfinance", number: 17},{link: "https://coinspaid.com/", alt: "coinspaid", number: 18},{link: "https://www.drops.co/", alt: "drops", number: 19},{link: "https://polker.game/", alt: "polker", number: 20},{link: "https://globedx.com/en/", alt: "globedx", number: 21},{link: "https://twitter.com/H3RO3SCOIN", alt: "H3RO3SCOIN", number: 22},{link: "https://portaldefi.com/", alt: "portaldefi", number: 23},{link: "https://www.thecryptoprophecies.com/", alt: "thecryptoprophecies", number: 24},{link: "https://nft.tech/", alt: "nft.tech", number: 25},{link: "https://staratlas.com/", alt: "staratlas", number: 26},{link: "https://senswap.com/", alt: "senswap", number: 27},{link: "https://slope.finance/", alt: "slope", number: 28},{link: "https://monstainfinite.com/", alt: "monstainfinite", number: 29},{link: "https://www.holaplex.com/", alt: "holaplex", number: 30}];
+
+section.investment
+    .investment__container
+        h3.investment__title
+            | Selected Investments 
+        ul.investment__items
+            each val in data
+                li.investment__item
+                    a.investment__link(href=`${val.link}` target="_blank" )
+                        .investment__link-box
+                            img.investment__img(src=`../assets/img/investment/logo${val.number}.png` alt=`${val.alt}`)

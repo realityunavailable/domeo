@@ -1,0 +1,114 @@
+.header{
+
+
+    &__container{
+        max-width: 1214px;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        @include mobile {
+            max-width: 302px;
+            padding: 0;
+        }
+    }
+
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 18px 0;
+
+        @include mobile{
+            padding: 16px 0;
+        }
+    }
+
+    &__logo-link{
+        display: flex;
+        margin-right: auto;
+        margin-left: 6px;
+
+        @include mobile{
+            margin-left: 0;
+        }
+    }
+
+    &__logo{
+        @include tablet{
+            width: 141px;
+            height: 53px;
+        }
+
+        @include mobile{
+            width: 117px;
+            height: 46px;
+        }
+    }
+
+    &__phone{
+        margin: 0 38px;
+        color: rgba(0, 0, 0, 0.8);
+        font: 600 16px/22px $font-family-manrope;
+
+        @include tablet{
+            display: none;
+        }
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    &__cabinet{
+
+        transition: all $transition-off;
+
+        &:hover .header__btn,
+        &:hover .header__btn-text,
+        &:hover .cabinet{
+            color: #000;
+            background: #ffd800;
+            transition: all $transition-on;
+            fill: #000;
+        }
+
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        padding: 16px 34px;
+        background: #eef5ff;
+        border-radius: 6px;
+
+        @include tablet{
+            padding: 12px 24px;
+        }
+
+        @include mobile{
+            padding: 8px 16px;
+        }
+    }
+
+    &__btn-text{
+        margin-right: 8px;
+        color: $blue;
+        font: 600 16px/22px $font-family-manrope;
+
+        @include mobile{
+            font-size: 10px;
+            line-height: 15px;
+        }
+    }
+}
+
+
+.cabinet{
+    margin-top: 3px;
+
+    @include mobile{
+        width: 10px;
+        height: 10px;
+    }
+}

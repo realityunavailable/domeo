@@ -1,0 +1,68 @@
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-bottom;
+    display: none;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    overflow-x: hidden; // убираем горизонтальный скролл
+    overflow-y: auto; //чтобы появлялся скролл, когда много текста
+    font: 700 30px/30px "Syncopate", sans-serif;
+    background-color: #000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+
+    @include mobile{
+        display: block;
+    }
+
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        padding: 30px 10px;
+    }
+
+    &__content{
+        position: relative;
+        width: 800px;
+        height: 500px;
+        padding: 30px;
+        transform: translate(0px, -100%);
+        opacity: 0;
+        transition: all 0.4s ease 0s;
+    }
+
+    &__nav{
+        height: 100%;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+}
+
+.is-open{
+    visibility: visible;
+    opacity: 1;
+
+    .popup__content{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.is-lock{
+    overflow: hidden;
+}
+

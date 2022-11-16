@@ -1,0 +1,129 @@
+.about{
+    max-width: 996px;
+    margin-bottom: 250px;
+
+    @include tablet{
+        margin-bottom: 200px;
+    }
+
+    @include mobile{
+        margin-bottom: 69px;
+    }
+
+    &__container {
+        position: relative;
+        padding: 36px 207px 40px 32px;
+
+
+        @include mobile {
+            padding: 12px 5% 10px 0px;
+        }
+    }
+
+    &__bg-net{
+        position: absolute;
+        top: -193px;
+        left: -170px;
+        z-index: -1;
+
+        @include tablet{
+            top: -235px;
+            left: -64px;
+            width: 594px;
+            height: 500px;
+        }
+
+        @include mobile {
+            top: -219px;
+            left: -104px;
+            width: 230px;
+            height: 194px;
+        }
+    }
+
+    &__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 5px;
+        backdrop-filter: blur(21.5px);
+
+        @include mobile{
+            left: -18%;
+            width: 200%;
+        }
+    }
+
+    &__title{
+        margin-bottom: 28px;
+        font: 700 60px/62px $font-family-syncopate;
+
+        @include tablet{
+            margin-bottom: 36px;
+            font-size: 50px;
+            line-height: 53px;
+        }
+
+        @include mobile {
+            margin-bottom: 31px;
+            font-size: 25px;
+            line-height: 26px;
+            text-align: center;
+        }
+    }
+
+    &__text{
+        position: relative;
+        z-index: 1;
+        max-width: 760px;
+        padding-bottom: 23px;
+        font: 20px/30px $font-family-raleway;
+
+        @include mobile {
+            padding-bottom: 0;
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+
+    &__text-bold{
+        position: relative;
+        z-index: 1;
+        display: block;
+        font: 600 20px/26px $font-family-raleway;
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        top: -51px;
+        right: -178px;
+        animation: ellipse 20s linear 0s infinite;
+
+        @include tablet{
+            position: absolute;
+            top: 149px;
+            right: -40px;
+            width: 250px;
+            height: 250px;
+        }
+
+        @include mobile {
+            top: -41px;
+            right: -64px;
+            width: 86px;
+            height: 86px;;
+        }
+    }
+}
+
+@keyframes ellipse {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

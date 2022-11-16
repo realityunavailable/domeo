@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    margin: 0;
+    color: $default;
+    // -webkit-font-smoothing: antialiased;
+    // text-size-adjust: none;
+    // font: 16px/27px $font-family-manrope;
+    font: 0.8333333333333334vw/1px $font-family-manrope;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -99;
+        width: 100%;
+        height: 100%;
+        opacity: 0.06;
+        content: "";
+    }
+
+    @media screen and ( min-width: 1920px ) {
+
+        body {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and ( max-width: 479px ) {
+
+        body {
+            font-size: 3.9916666666666667px;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+// Типографика и блоки
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    text-decoration-skip-ink: none;
+}
+
+// img {
+//     display: block;
+//     max-width: 100%;
+// }
+
+// figure {
+//     margin: 0;
+// }
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+// label {
+//     cursor: pointer;
+// }
+
+// Интерактив и пользовательский ввод
+
+// a,
+// button,
+// label {
+//     // Подсветка при тапе
+//     -webkit-touch-callout: none;
+//     user-select: none;
+//     user-select: none;
+//     user-select: none;
+//     user-select: none;
+//     user-select: none;
+//     -webkit-tap-highlight-color: transparent;
+// }
+
+button,
+input,
+textarea,
+select {
+    box-sizing: border-box; //hz
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit; //hz
+    font-family: inherit;
+    line-height: inherit; //hz
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    appearance: none;
+}
+
+// убираем скрол в хроме
+
+textarea {
+    overflow: auto;
+}
+
+// Пытаемся прятать подсветку автозаполнения полей
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus,
+// textarea:-webkit-autofill,
+// textarea:-webkit-autofill:hover,
+// textarea:-webkit-autofill:focus,
+// select:-webkit-autofill,
+// select:-webkit-autofill:hover,
+// select:-webkit-autofill:focus {
+//     background: none !important;
+//     transition: background-color 999s, color 999s !important;;
+// }

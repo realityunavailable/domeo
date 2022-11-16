@@ -1,0 +1,43 @@
+footer.footer
+    .footer__container
+        .footer__top 
+            .footer__contact
+                a.footer__logo(href="#")
+                    img.footer__logo-img(src="../assets/img/header/Group 1968.svg", alt="логотип")
+                .footer__address
+                    |г. Москва
+                    |#[br]
+                    |Лужнецкая наб., 2/4с17
+                .footer__phone
+                    | +7 (926) 673-94-72
+                a.footer__callback-btn(href="#")
+                        | Обратный звонок
+                .footer__social 
+                    a.footer__social-link(href="#") 
+                        +svgIcon(21,21,"whatsapp","#666")
+                        .footer__social-text
+                            | WhatsApp
+                    a.footer__social-link(href="#") 
+                        +svgIcon(21,21,"viber","#666")
+                        .footer__social-text
+                            | Viber
+                    a.footer__social-link(href="#") 
+                        +svgIcon(21,21,"telegram","#666")
+                        .footer__social-text
+                            | Telegram
+            .form
+                h3.form__title
+                    | Стать партнером
+                .form__text 
+                    | Оставьте заявку, менеджер пришлет вам ссылку для регистрации
+                form.form__data(action="get") 
+                    input.form__name.form__input(type="text" name="" placeholder="Введите ваше имя")
+                    input.form__number.form__input(type="tel" name="" placeholder="+7 (915) 555 55 55")
+                    input.form__btn(type="submit", value="Зарегистрироваться")
+                p.form__policy 
+                    | Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с #[a(href="#").link-common политикой конфиденциальности]
+        .footer__bottom
+            a.footer__link-main.link-common(href="#") domeo.ru
+            .docs 
+                a.footer__link.link-common.footer__link_pos(href="#") Договор оферты
+                a.footer__link.link-common(href="#") Политика конфиденциальности
