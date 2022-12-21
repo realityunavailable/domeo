@@ -1,11 +1,11 @@
+@import "parts/breakpoints";
+@import "parts/ui-kit";
 @import "parts/fonts";
 @import "parts/vars";
 @import "parts/rest";
 @import "parts/mixins";
 @import "parts/global";
-@import "parts/breakpoints";
 @import "../blocks/header/header";
 @import "../blocks/footer/footer";
 @import "../blocks/home";
-
 

@@ -1,0 +1,186 @@
+.h1 {
+    font: 400 3.23em/110% "Lato", sans-serif;
+
+    @include tablet {
+        font-size: 5.83em;
+        text-align: center;
+    }
+
+    @include mobile {
+        font-size: 10.188vw;
+        text-align: center;
+    }
+}
+
+.h2 {
+    font: 500 2.083em/120% "Lato", sans-serif;
+    text-align: center;
+
+    @include tablet {
+        font-size: 3.437em;
+    }
+
+    @include mobile {
+        font-size: 6.166vw;
+    }
+}
+
+// done
+
+.text-manrope-15 {
+    font: 300 0.781em/140% "Manrope", sans-serif;
+
+    @include tablet {
+        font-size: 1.5625em;
+    }
+
+    @include mobile {
+        font-size: 3.753vw;
+    }
+}
+
+// done
+
+.text-manrope-16 {
+    font: 300 0.83em/140% "Manrope", sans-serif;
+
+    @include tablet {
+        font-size: 1.66em;
+    }
+
+    @include mobile {
+        font-size: 3.753vw;
+    }
+}
+
+// done
+
+.text-manrope-17 {
+    font: 300 0.88em/140% "Manrope", sans-serif;
+
+    @include tablet {
+        font-size: 1.66em;
+    }
+
+    @include mobile {
+        font-size: 4.021vw;
+    }
+}
+
+// done
+
+.text-manrope-18 {
+    font: 400 0.9375em/140% "Manrope", sans-serif;
+
+    @include tablet {
+        font-size: 1.875em;
+    }
+
+    @include mobile {
+        font-size: 4.021vw;
+    }
+}
+
+// done
+
+.title-manrope {
+    font: 600 1.145em/140% "Manrope", sans-serif;
+
+    @include tablet {
+        font-size: 2.291em;
+    }
+
+    @include mobile {
+        font-size: 4.29vw;
+    }
+}
+
+// done
+
+.title-lato-25 {
+    font: 500 1.3em/120% "Lato", sans-serif;
+
+    @include tablet {
+        font-size: 2.083em;
+    }
+
+    @include mobile {
+        font-size: 5.094vw;
+    }
+}
+
+// done
+
+.title-lato-27 {
+    font: 500 1.406em/130% "Lato", sans-serif;
+
+    @include tablet {
+        font-size: 2.5em;
+    }
+
+    @include mobile {
+        font-size: 4.82vw;
+    }
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.mb-140 {
+    margin-bottom: 7.291em;
+
+    @include tablet {
+        margin-bottom: 10.41em;
+    }
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.98em 2.031em;
+    background: linear-gradient(0deg, #ffe24d, #ffe24d),
+        linear-gradient(90deg, #ffe86c 0%, #ffcf55 100%);
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+
+    @include tablet {
+        padding: 2.04em 6.25em;
+    }
+
+    @include mobile {
+        padding: 4.021vw 16.086vw;
+    }
+
+    &_big {
+        padding: 0.937em 3.43em;
+
+        @include tablet {
+            padding: 1.87em 6.25em;
+        }
+
+        @include mobile {
+            padding: 3.75vw 16.1vw;
+        }
+    }
+
+    &__text {
+        font: 600 0.88em/140% "Manrope", sans-serif;
+
+        @include tablet {
+            font-size: 1.77em;
+        }
+
+        @include mobile {
+            font-size: 4.56vw;
+        }
+    }
+
+}

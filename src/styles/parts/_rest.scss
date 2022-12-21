@@ -14,10 +14,8 @@ body {
     height: 100%;
     margin: 0;
     color: $default;
-    // -webkit-font-smoothing: antialiased;
-    // text-size-adjust: none;
-    // font: 16px/27px $font-family-manrope;
-    font: 0.8333333333333334vw/1px $font-family-manrope;
+    font: 1vw/1px $font-manrope;
+    background: $bg;
 
     &::after {
         position: absolute;
@@ -29,20 +27,24 @@ body {
         opacity: 0.06;
         content: "";
     }
+}
 
-    @media screen and ( min-width: 1920px ) {
+@media screen and ( min-width: 1921px ) {
 
-        body {
-            font-size: 16px;
-        }
+    body {
+        font-size: 19.2px;
+    }
+}
+
+@media screen and ( max-width: 767px ) {
+
+    body {
+        font-size: 7.67px;
     }
 
-    @media screen and ( max-width: 479px ) {
-
-        body {
-            font-size: 3.9916666666666667px;
-        }
-    }
+    // body {
+    //     font-size: 6.4px;
+    // }
 }
 
 h1,

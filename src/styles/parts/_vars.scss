@@ -1,23 +1,25 @@
 // transitions
-$transition-slower:          0.5s;
-$transition-slow:            0.35s;
-$transition-normal:          0.25s;
-$transition-medium:          0.15s;
-$transition-fast:            0.1s;
+$transition-slower: 0.5s;
+$transition-slow: 0.35s;
+$transition-normal: 0.25s;
+$transition-medium: 0.15s;
+$transition-fast: 0.1s;
 
 // hovers
-$transition-on:        $transition-normal;
-$transition-off:       $transition-slower;
+$transition-on: $transition-normal;
+$transition-off: $transition-slower;
 
 // fonts
-$font-family-manrope:        "Manrope", sans-serif;
-$font-family-lato:         "Lato", sans-serif;
+$font-manrope: "Manrope", sans-serif;
+$font-lato: "Lato", sans-serif;
 
 //colors
 $default: #000;
 $blue: #59a5ff;
-$gray:  rgba(0, 0, 0, 0.6);
+$gray: rgba(0, 0, 0, 0.7);
+$bg: #f6f6f6;
+$white: #fff;
 
 //z-index
-$z-top:1000;
-$z-bottom:100;
+$z-top: 2;
+$z-bottom: 1;

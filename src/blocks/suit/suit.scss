@@ -1,0 +1,160 @@
+.suit {
+    margin-top: -3.1em;
+    padding: 2.97em 20.625em 2.6em;
+    background: $white;
+
+    @include tablet {
+        margin-top: -5.7em;
+        padding: 3.75em 18.233em 3.16em 18.233em;
+    }
+
+    @include mobile {
+        margin-top: -9.5vw;
+        margin-bottom: 13.405vw;
+        padding: 10.188vw 0;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__mb-14 {
+        margin-bottom: 0.73em;
+
+        @include tablet {
+            margin-bottom: 1.77em;
+        }
+
+        @include mobile {
+            width: 72.386vw;
+            margin-bottom: 4.826vw;
+        }
+    }
+
+    &__mb-44 {
+        margin-bottom: 2.3em;
+
+        @include tablet {
+            margin-bottom: 3.54em;
+        }
+
+        @include mobile {
+            margin-bottom: 6.166vw;
+        }
+    }
+
+    &__text {
+        max-width: 32.97em;
+        color: $gray;
+        text-align: center;
+
+        @include tablet {
+            max-width: 33.625em;
+        }
+
+        @include mobile {
+            max-width: 77.748vw;
+        }
+    }
+
+    &__items {
+        display: flex;
+
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 4.375em;
+            row-gap: 2.6em;
+        }
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 8.579vw;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15em;
+        padding: 0.98em 2em 0.98em 2em;
+        text-align: center;
+
+        @include tablet {
+            width: 27em;
+            padding: 1.98em 1.87em;
+        }
+
+        @include mobile {
+            width: 46.917vw;
+            padding: 0;
+            padding-top: 4.021vw;
+        }
+    }
+
+    &__description {
+        width: 7.23em;
+
+        &_wrap {
+            width: 10.23em;
+        }
+    }
+
+    &__img {
+        margin-bottom: 1.25em;
+        object-fit: contain;
+
+        &_1 {
+            width: 7.65em;
+            margin-top: -0.98em;
+
+            @include tablet {
+                width: 15.1em;
+            }
+
+            @include mobile {
+                width: 34.316vw;
+            }
+        }
+
+        &_2 {
+            width: 8.5em;
+
+            @include tablet {
+                width: 17em;
+            }
+
+            @include mobile {
+                width: 38.606vw;
+            }
+        }
+
+        &_3 {
+            width: 7.5em;
+
+            @include tablet {
+                width: 15.1em;
+            }
+
+            @include mobile {
+                width: 34.316vw;
+            }
+        }
+
+        &_4 {
+            width: 8.1em;
+
+            @include tablet {
+                width: 16.14em;
+            }
+
+            @include mobile {
+                width: 36.729vw;
+            }
+        }
+    }
+}

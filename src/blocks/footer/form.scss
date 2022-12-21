@@ -10,14 +10,14 @@
 
     &__title {
         margin-bottom: 8px;
-        font: 600 20px/27px $font-family-manrope;
+        font: 600 20px/27px $font-manrope;
     }
 
     &__text {
         max-width: 288px;
         margin-bottom: 22px;
         color: $gray;
-        font: 300 16px/130% $font-family-manrope;
+        font: 300 16px/130% $font-manrope;
     }
 
     &__data {
@@ -27,7 +27,7 @@
 
     &__input {
         padding: 18px 18px 20px 18px;
-        font: 300 16px/140% $font-family-manrope;
+        font: 300 16px/140% $font-manrope;
         background: #edf1f6;
         border-radius: 6px;
 
@@ -48,7 +48,7 @@
         margin-bottom: 13px;
         padding: 18px;
         color: #462f10;
-        font: 600 17px/23px $font-family-manrope;
+        font: 600 17px/23px $font-manrope;
         background: linear-gradient(0deg, #ffe24d, #ffe24d),
             linear-gradient(90deg, #ffe86c 0%, #ffcf55 100%);
         border: 1px solid #eaeaea;
@@ -58,6 +58,6 @@
     &__policy {
         max-width: 328px;
         color: rgba(0, 0, 0, 0.4);
-        font: 300 12px/140% $font-family-manrope;
+        font: 300 12px/140% $font-manrope;
     }
 }

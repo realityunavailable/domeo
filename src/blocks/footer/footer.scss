@@ -55,7 +55,7 @@
     &__address {
         margin-bottom: 40px;
         color: $gray;
-        font: 400 16px/22px $font-family-manrope;
+        font: 400 16px/22px $font-manrope;
 
         @include tablet {
             margin-bottom: 20px;
@@ -66,7 +66,7 @@
     &__phone {
         margin-bottom: 14px;
         color: rgba(0, 0, 0, 0.8);
-        font: 600 18px/25px $font-family-manrope;
+        font: 600 18px/25px $font-manrope;
     }
 
     &__callback-btn {
@@ -74,7 +74,7 @@
         margin-bottom: 21px;
         padding: 12px 38px;
         color: $blue;
-        font: 600 16px/22px $font-family-manrope;
+        font: 600 16px/22px $font-manrope;
         background: #e0edff;
         border: 1px solid rgba(89, 165, 255, 0.18);
         border-radius: 6px;
@@ -102,7 +102,7 @@
         justify-content: center;
         padding: 13px 27px 12px 13px;
         color: $gray;
-        font: 600 16px/22px $font-family-manrope;
+        font: 600 16px/22px $font-manrope;
         background: #fff;
         border: 1px solid #fff;
         border-radius: 6px;
@@ -140,7 +140,7 @@
     }
 
     &__link {
-        font: 300 15px/140% $font-family-manrope;
+        font: 300 15px/140% $font-manrope;
 
         &_pos {
             margin-right: 50px;
@@ -148,7 +148,7 @@
     }
 
     &__link-main {
-        font: 400 20px/140% $font-family-manrope;
+        font: 400 20px/140% $font-manrope;
         text-decoration: none;
     }
 }
