@@ -2,11 +2,12 @@
     padding: 6.8em 19em;
 
     @include tablet {
+        margin-bottom: -3em;
         padding: 10.62em 18.23em;
     }
 
     @include mobile {
-        margin-bottom: 15vw;
+        margin-bottom: 16.5vw;
         padding: 0 5.362vw;
     }
 
