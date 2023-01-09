@@ -35,7 +35,7 @@
     }
 
     @include mobile {
-        font-size: 3.753vw;
+        font-size: 4.02vw;
     }
 }
 
@@ -95,6 +95,19 @@
     }
 }
 
+.title-lato-20 {
+    font: 700 1.04em/130% "Lato", sans-serif;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 2.08em;
+    }
+
+    @include mobile {
+        font-size: 5.36vw;
+    }
+}
+
 // done
 
 .title-lato-25 {
@@ -105,7 +118,7 @@
     }
 
     @include mobile {
-        font-size: 4.290vw; //change
+        font-size: 4.29vw; //change
     }
 }
 
@@ -182,7 +195,6 @@
             font-size: 4.56vw;
         }
     }
-
 }
 
 .body-lock {
