@@ -55,7 +55,10 @@
     }
 
     &__subtitle {
-        font-size: 5.362vw;
+
+        @include mobile {
+            font-size: 5.362vw;
+        }
     }
 
     &__wrap {
