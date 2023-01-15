@@ -1,0 +1,161 @@
+.clarity {
+    padding: 7.3em 18.23em;
+
+    @include tablet {
+        padding: 16.2em 18.23em 10.4em;
+    }
+
+    @include mobile {
+        padding: 11.53vw 5.63vw 12.87vw;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+
+    &__mb-12 {
+        margin-bottom: 0.62em;
+
+        @include tablet {
+            margin-bottom: 1.25em;
+        }
+
+        @include mobile {
+            width: 63.8vw;
+            margin-bottom: 4vw;
+        }
+    }
+
+    &__mb-44 {
+        margin-bottom: 2.3em;
+
+        @include tablet {
+            width: 49.16em;
+            margin-bottom: 2.6em;
+        }
+
+        @include mobile {
+            width: 81vw;
+            margin-bottom: 4vw;
+        }
+    }
+
+    &__subtitle {
+        color: $gray;
+        text-align: center;
+    }
+
+    &__wrap {
+        display: flex;
+        margin-bottom: 2.23em;
+        column-gap: 1.7em;
+
+        @include tablet {
+            flex-direction: column;
+            margin-bottom: 2.6em;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            margin-bottom: 10.1vw;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.04em;
+
+        @include tablet {
+            align-items: center;
+            margin-bottom: 3.23em;
+            row-gap: 2em;
+        }
+
+        @include mobile {
+            margin-bottom: 8.3vw;
+            row-gap: 5.3vw;
+        }
+    }
+
+    &__item {
+        display: flex;
+        width: 27.6em;
+        padding: 1.56em 2.28em 1.56em 1.4em;
+        column-gap: 1.51em;
+        background: $white;
+
+        &--pd {
+            padding-right: 4.27em;
+
+            @include tablet {
+                padding-right: 8.5em;
+            }
+        }
+
+        @include tablet {
+            width: 55.2em;
+            padding: 3.12em 4.96em 3.12em 2.81em;
+            column-gap: 3em;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            width: 88.4vw;
+            padding: 3.7vw 1.3vw 6.7vw;
+            column-gap: 0;
+            row-gap: 4.56vw;
+        }
+    }
+
+    &__text {
+
+        @include mobile {
+            text-align: center;
+        }
+
+        &_width {
+            @include mobile {
+                width: 79.6vw;
+            }
+        }
+    }
+
+    &__img-icon {
+        width: 3.43em;
+        height: 3.43em;
+        margin-top: 0.2em;
+
+        @include tablet {
+            width: 6.87em;
+            height: 6.87em;
+            margin-top: 0.5em;
+        }
+
+        @include mobile {
+            width: 15vw;
+            height: 15vw;
+            margin-top: 0;
+        }
+    }
+
+    &__img {
+        width: 34.16em;
+        height: 23.17em;
+
+        @include tablet {
+            width: 63.54em;
+            height: 31.77em;
+        }
+
+        @include mobile {
+            width: 88.47vw;
+            height: 46.1vw;
+        }
+    }
+}

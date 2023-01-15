@@ -1,0 +1,12 @@
+mixin svgIcon(width, height, id, fill)
+    svg(
+    width=width
+    height=height
+    fill=fill
+    class=id
+    )
+        use(xlink:href="../assets/img/sprite.svg" + `#${id}`)
+
+mixin btn(id, title, link)
+    a.btn(href=link class=id)
+        .btn__text=title

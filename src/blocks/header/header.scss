@@ -1,0 +1,258 @@
+.header {
+    margin-bottom: 1.2em;
+
+    &-top {
+        width: 100%;
+        margin-bottom: 1.51em;
+        padding: 1.04em 16.25em;
+        background: $white;
+
+        @include tablet {
+            margin-bottom: 4.79em;
+            padding: 2.6em 18.23em;
+        }
+
+        @include mobile {
+            margin-bottom: 6.434vw;
+            padding: 4vw 9.65vw;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1187px;
+    }
+
+    &__logo-link {
+        display: flex;
+        margin-right: auto;
+
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+
+    &__logo {
+        width: 9.53125em;
+        height: 3.5739583333333333333em;
+
+        @include tablet {
+            width: 14.68em;
+            height: 5.52em;
+        }
+
+        @include mobile {
+            width: 31.099vw;
+            height: 11.662vw;
+        }
+    }
+
+    &__phone {
+
+        &-container {
+            margin: 0 2.03125em;
+        }
+
+        color: rgba(0, 0, 0, 0.8);
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__cabinet {
+        transition: all $transition-off;
+
+        &:hover .header__btn,
+        &:hover .header__btn-text,
+        &:hover .cabinet {
+            color: #000;
+            background: #ffd800;
+            transition: all $transition-on;
+            fill: #000;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        padding: 0.83em 1.77em;
+        background: #eef5ff;
+        border-radius: 0.31em;
+
+        @include tablet {
+            padding: 1.25em 2.604em;
+        }
+
+        @include mobile {
+            padding: 1.877vw 4.558vw;
+        }
+
+        &-container {
+            margin-right: 0.41em;
+
+            @include mobile {
+                margin-right: 0.965vw;
+            }
+        }
+
+        &-text {
+            color: $blue;
+            font: 600 0.83em/140% "Manrope", sans-serif;
+
+            @include tablet {
+                font-size: 1.66em;
+            }
+
+            @include mobile {
+                font-size: 2.842vw;
+            }
+        }
+    }
+}
+
+.header-btm {
+    display: flex;
+    padding: 0 16.25em;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 4.29vw;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        max-width: 594px;
+        padding-top: 4.01em;
+
+
+        @include tablet {
+            align-items: center;
+            margin-bottom: 4.27em;
+            padding-top: 0;
+        }
+
+        @include mobile {
+            align-items: center;
+            margin-bottom: 8.58vw;
+            padding-top: 0;
+        }
+    }
+
+    &__10 {
+        margin-bottom: 0.52em;
+
+        @include tablet {
+            margin-bottom: 0.83em;
+        }
+
+        @include mobile {
+            margin-bottom: 2.145vw;
+        }
+    }
+
+    &__25 {
+        margin-bottom: 1.3em;
+
+        @include tablet {
+            margin-bottom: 1.97em;
+        }
+
+        @include mobile {
+            margin-bottom: 4.826vw;
+        }
+    }
+
+    &__subtitle {
+        @include mobile {
+            font-size: 4.29vw;
+            text-align: center;
+        }
+    }
+
+    &__24-mobile {
+        @include tablet {
+            margin-bottom: 2.5em;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        max-width: 22.4em;
+
+        @include tablet {
+            max-width: 44.8em;
+        }
+
+        @include mobile {
+            align-items: start;
+            max-width: 72.386vw;
+        }
+    }
+
+    &__img {
+        width: 3.385em;
+        height: 1.77em;
+        margin-right: 0.468em;
+        border-radius: 100vw;
+
+        @include tablet {
+            width: 6.77em;
+            height: 3.541em;
+            margin-right: 0.93em;
+        }
+
+        @include mobile {
+            width: 13.405vw;
+            height: 6.971vw;
+            margin-right: 2.145vw;
+        }
+    }
+
+    &__img-main {
+        width: 39.84em;
+        height: 31.66em;
+
+        @include tablet {
+            width: 66.04em;
+            height: 52.5em;
+        }
+
+        @include mobile {
+            width: 100vw;
+            height: 115.282vw;
+            object-fit: cover;
+        }
+    }
+}
+
+.cabinet {
+    width: 0.78em;
+    height: 0.78em;
+
+    @include tablet {
+        width: 1.56em;
+        height: 1.56em;
+    }
+
+    @include mobile {
+        width: 2.68vw;
+        height: 2.68vw;
+    }
+}
+

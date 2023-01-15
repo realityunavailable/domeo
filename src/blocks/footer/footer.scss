@@ -1,0 +1,174 @@
+.link-common {
+    color: $gray;
+    text-decoration: underline;
+    transition: color $transition-off;
+
+    &:hover {
+        color: $blue;
+        transition: color $transition-on;
+    }
+}
+
+.footer {
+    background: #f6f7f8;
+
+    &__container {
+        max-width: 1217px;
+        margin: 0 auto;
+        @include laptop {
+            padding: 0 20px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 45px;
+
+        @include tablet {
+            align-items: center;
+            margin-top: 24px;
+            margin-bottom: 46px;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        margin-bottom: 36px;
+
+        @include tablet {
+            margin-bottom: 32.28px;
+        }
+    }
+
+    &__address {
+        margin-bottom: 40px;
+        color: $gray;
+        font: 400 16px/22px $font-manrope;
+
+        @include tablet {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    &__phone {
+        margin-bottom: 14px;
+        color: rgba(0, 0, 0, 0.8);
+        font: 600 18px/25px $font-manrope;
+    }
+
+    &__callback-btn {
+        display: block;
+        margin-bottom: 21px;
+        padding: 12px 38px;
+        color: $blue;
+        font: 600 16px/22px $font-manrope;
+        background: #e0edff;
+        border: 1px solid rgba(89, 165, 255, 0.18);
+        border-radius: 6px;
+        transition: all $transition-off;
+
+        @include tablet {
+            margin-bottom: 32px;
+        }
+
+        &:hover {
+            color: #000;
+            background: #ffd800;
+            transition: all $transition-on;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 13px 27px 12px 13px;
+        color: $gray;
+        font: 600 16px/22px $font-manrope;
+        background: #fff;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        transition: all $transition-off;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        &:hover {
+            color: #000;
+            background: #ffd800;
+            transition: all $transition-on;
+        }
+
+        &:hover .whatsapp,
+        &:hover .viber,
+        &:hover .telegram {
+            transition: all $transition-on;
+            fill: #000;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 31px 0 22px 0;
+        border-top: 1px solid #dbdbdb;
+
+        @include tablet {
+            max-width: 610px;
+            margin: 0 auto;
+        }
+    }
+
+    &__link {
+        font: 300 15px/140% $font-manrope;
+
+        &_pos {
+            margin-right: 50px;
+        }
+    }
+
+    &__link-main {
+        font: 400 20px/140% $font-manrope;
+        text-decoration: none;
+    }
+}
+
+.whatsapp,
+.viber,
+.telegram {
+    transition: all $transition-off;
+}
+
+.whatsapp {
+    margin-right: 10px;
+}
+
+.viber {
+    margin-right: 11px;
+}
+
+.telegram {
+    margin-right: 14px;
+}
+
+@import "form.scss";

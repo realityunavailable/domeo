@@ -1,0 +1,17 @@
+@import "breakpoints";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.container{
+    width: 100%;
+    max-width: 1920px;
+}

@@ -1,0 +1,171 @@
+.services {
+    padding: 3.6em 18.23em 4.48em 18.23em;
+    background: $white;
+
+    @include tablet {
+        padding: 3.43em 9.12em 3.13em 9.12em;
+    }
+
+    @include mobile {
+        padding: 7.7vw 9.3vw 9.3vw 9.3vw;
+    }
+
+    &__container {
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+
+    &__max-850 {
+        max-width: 42.18em;
+        margin: 0 auto;
+
+        @include tablet {
+            max-width: 58.75em;
+        }
+    }
+
+    &__mb-45 {
+        margin-bottom: 2.34em;
+
+        @include tablet {
+            margin-bottom: 2.6em;
+        }
+
+        @include mobile {
+            margin-bottom: 6.7vw;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 2em;
+
+        @include tablet {
+            justify-content: center;
+            row-gap: 2.6em;
+        }
+
+        @include mobile {
+            justify-content: center;
+            row-gap: 6.702vw;
+        }
+    }
+}
+
+.service {
+    display: flex;
+    width: 30.2em;
+    padding: 1.82em 3.28em 2.18em 1.72em;
+    column-gap: 1.4em;
+    background: $bg;
+
+    @include tablet {
+        width: 63.23em;
+        padding: 3.43em 11em 3.96em 2.7em;
+        column-gap: 2.92em;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        width: 81.77vw;
+        padding: 3.75vw 1.34vw 6.434vw;
+        column-gap: 0;
+        row-gap: 4.3vw;
+    }
+
+    &_pd-2 {
+        @include mobile {
+            padding-bottom: 7.24vw;
+        }
+    }
+
+    &_pd-3 {
+        padding-right: 1.56em;
+
+        @include tablet {
+            padding-right: 7.6em;
+        }
+
+        @include mobile {
+            padding-bottom: 8vw;
+        }
+    }
+
+    &_pd-4 {
+        padding-right: 5em;
+
+        @include tablet {
+            padding-right: 14.48em;
+        }
+
+        @include mobile {
+            padding-right: 2.94vw;
+            padding-bottom: 8.3vw;
+            padding-left: 2.94vw;
+        }
+    }
+
+    &_pd-5 {
+        padding-right: 1.56em;
+
+        @include tablet {
+            padding-right: 7.6em;
+        }
+
+        @include mobile {
+            padding-right: 4.8vw;
+            padding-bottom: 5.6vw;
+            padding-left: 4.8vw;
+        }
+    }
+
+    &_pd-6 {
+        @include mobile {
+            padding-bottom: 7.7vw;
+        }
+    }
+
+    &__mb-11 {
+        margin-bottom: 0.58em;
+
+        @include tablet {
+            margin-bottom: 1.14em;
+        }
+
+        @include mobile {
+            margin-bottom: 2.95vw;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        width: 4.22em;
+        height: 4.22em;
+
+        @include tablet {
+            width: 7.4em;
+            height: 7.4em;
+        }
+
+        @include mobile {
+            width: 16vw;
+            height: 16vw;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        color: $gray;
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+}
