@@ -56,6 +56,10 @@
 
     &__subtitle {
 
+        @include tablet {
+            text-align-last: left;
+        }
+
         @include mobile {
             font-size: 5.362vw;
         }

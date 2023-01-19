@@ -28,15 +28,15 @@ module.exports = merge(common, {
         historyApiFallback: true,
         open: true,
         compress: true,
-        host: "192.168.100.47",
+        // host: "192.168.100.47",
         port: 7373,
-        proxy: {
-            "/api/**": {
-                target: "192.168.100.47:8000",
-                secure: false,
-                changeOrigin: true,
-            },
-        },
+        // proxy: {
+        //     "/api/**": {
+        //         target: "192.168.100.47:8000",
+        //         secure: false,
+        //         changeOrigin: true,
+        //     },
+        // },
 
         overlay: {
             warnings: false,

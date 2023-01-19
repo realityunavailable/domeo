@@ -19,7 +19,7 @@
         @include tablet {
             display: flex;
             flex-direction: column;
-            row-gap: 2.6em;
+            row-gap: 2em;
         }
     }
 
@@ -31,7 +31,7 @@
         @include tablet {
             flex-direction: column-reverse;
 
-            padding: 2.5em 4.37em;
+            padding: 2.5em 4.37em 3.33em;
         }
 
         @include mobile {
@@ -105,7 +105,7 @@
     }
 
     &__title {
-        max-width: 14.83em;
+        max-width: 15.83em;
 
         &_width {
             max-width: 13em;
@@ -141,10 +141,11 @@
     }
 
     &__text {
-        max-width: 31em;
+        max-width: 25em;
 
         @include tablet {
             text-align: center;
+            font-size: 1.67em;
         }
 
         @include mobile {
@@ -155,7 +156,7 @@
             max-width: 32em;
 
             @include tablet {
-                max-width: 25em;
+                max-width: 31em;
             }
         }
     }

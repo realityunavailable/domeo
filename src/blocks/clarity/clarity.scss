@@ -2,11 +2,11 @@
     padding: 7.3em 18.23em;
 
     @include tablet {
-        padding: 16.2em 18.23em 10.4em;
+        padding: 13.6em 18.23em 10.4em;
     }
 
     @include mobile {
-        padding: 11.53vw 5.63vw 12.87vw;
+        padding: 12.43vw 5.63vw 12.87vw;
     }
 
     &__container {

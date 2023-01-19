@@ -1,3 +1,204 @@
 .trust {
-    
+    padding: 1.92em 18.3em 3.54em;
+    background: $white;
+
+    @include tablet {
+        padding: 1.66em 17.29em 4.47em;
+    }
+
+    @include mobile {
+        padding: 3.4vw 10.45vw 10.99vw;
+    }
+
+    &__container {
+        max-width: 1216px;
+        margin: 0 auto;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__mb-13 {
+        margin-bottom: 0.67em;
+
+        @include tablet {
+            margin: 0 auto;
+            margin-bottom: 2.39em;
+            width: 37.6em;
+        }
+
+        @include mobile {
+            width: 72.922vw;
+            margin: 0 auto;
+            margin-bottom: 5.63vw;
+        }
+    }
+
+    &__mb-38 {
+        margin-bottom: 1.97em;
+
+        @include tablet {
+            width: 48.75em;
+            margin: 0 auto;
+            margin-bottom: 2.39em;
+        }
+
+        @include mobile {
+            width: 80.96vw;
+            margin: 0 auto;
+            margin-bottom: 5.36vw;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: $gray;
+        font: 600 1.04em/125% "Manrope", sans-serif; 
+
+        @include tablet {
+            font-size: 2.08em;
+        }
+
+        @include mobile {
+            font-size: 4.82vw;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.55em;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2.39em;
+            margin-bottom: 3.43em;
+        }
+
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 9.38vw;
+            margin-bottom: 6.7vw;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 2.23em 1.77em 2.13em;
+        height: 17.86em;
+        width: 32.81em;
+        justify-content: space-between;
+        border: 1px solid #F1F1F1;
+
+        @include tablet {
+            padding: 4.79em 1.56em 4.27em 3.54em;
+            width: 63.54em;
+            height: 35.72em;
+        }
+
+        @include mobile {
+            padding: 3.48vw 2.11vw;
+            width: 80.96vw;
+            height: 96.247vw;
+        }
+    }
+
+    &__item {
+        display: flex;
+        column-gap: 0.41em;
+        align-items: center;
+
+        @include tablet {
+            column-gap: 0.83em;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__text {
+        
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__text {
+
+        @include mobile {
+            font-size: 3.75vw;
+        }
+        
+        &--bold {
+            color: #59A5FF;
+            font-weight: 700;
+
+            @include mobile {
+                font-size: 4.826vw;
+            }
+        }
+    }
+
+    &__video {
+        height: 17.86em;
+        width: 29.37em;
+
+        @include tablet {
+            width: 63.54em;
+            height: 35.72em;
+        }
+
+        @include mobile {
+            width: 80.96vw;
+            height: 49.06vw;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        column-gap: 0.62em;
+        
+        @include tablet {
+            flex-wrap: wrap;
+            row-gap: 1.56em;
+            column-gap: 1.56em;
+            justify-content: center;
+        }
+
+        @include mobile {
+            flex-wrap: wrap;
+            row-gap: 2.68vw;
+            justify-content: center;
+        }
+    }
+
+    &__img {
+        width: 15.36em;
+        height: 6.35em;
+        border-radius: 5px;
+
+        @include tablet {
+            width: 30.72em;
+            height: 12.7em;
+        }
+
+        @include mobile {
+            width: 79.08vw;
+            height: 24.66vw;
+            object-fit: cover;
+        }
+    }
+
 }

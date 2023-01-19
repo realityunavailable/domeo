@@ -1,5 +1,5 @@
 .h1 {
-    font: 400 3.23em/110% "Lato", sans-serif;
+    font: 400 3.13em/110% "Lato", sans-serif;
 
     @include tablet {
         font-size: 5.83em;
@@ -59,7 +59,7 @@
     font: 300 0.88em/140% "Manrope", sans-serif;
 
     @include tablet {
-        font-size: 1.66em;
+        font-size: 1.73em; // change
     }
 
     @include mobile {
@@ -125,7 +125,7 @@
 // done
 
 .title-lato-27 {
-    font: 500 1.406em/130% "Lato", sans-serif;
+    font: 500 1.35em/130% "Lato", sans-serif;
 
     @include tablet {
         font-size: 2.5em;
