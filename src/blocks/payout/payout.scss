@@ -1,0 +1,89 @@
+.payout {
+    padding: 2.86em 18.22em 4.16em;
+    background: $white;
+
+    @include tablet {
+        padding: 2.39em 18.64em 4.89em;
+    }
+
+    @include mobile {
+        padding: 6.17vw 5.63vw 10.99vw;
+    }
+
+    &__container {
+        max-width: 1220px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__mb-30 {
+        margin-bottom: 1.56em;
+
+        @include tablet {
+            margin-bottom: 2.6em;
+        }
+
+        @include mobile {
+            margin-bottom: 7.24vw;
+        }
+    }
+
+    &__img {
+        width: 53.75em;
+        height: 32.13em;
+        margin-bottom: 2.91em;
+
+        @include tablet {
+            width: 63.54em;
+            height: 37.91em;
+            margin-bottom: 4.06em;
+        }
+
+        @include mobile {
+            width: 88.47vw;
+            height: 52.82vw;
+            margin-bottom: 6.43vw;
+        }
+    }
+
+    &__wrap {
+        padding: 2.29em 3.12em 2.60em 1.97em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #EAEAEA;
+        border-radius: 20px;
+
+        @include tablet {
+            padding: 3.02em 1.66em 3.12em;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mobile {
+            width: 88.47vw;
+            padding: 7.77vw 5.90vw 5.63vw; 
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__text {
+
+        font: 500 2.083em/120% "Lato", sans-serif;
+
+        @include tablet {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 0.9em;
+        }
+
+        @include mobile {
+            font-size: 4.85vw;
+            text-align: center;
+            margin-bottom: 5vw;
+        }
+    }
+}

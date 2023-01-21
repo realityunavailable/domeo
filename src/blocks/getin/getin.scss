@@ -7,6 +7,7 @@
 
     @include mobile {
         padding: 13.4vw 8.84vw;
+        margin-bottom: -3em;
     }
 
     &__container {
@@ -82,7 +83,10 @@
     }
 
     &__card-title {
-        font-size: 4.82vw;
+
+        @include mobile {
+            font-size: 4.82vw;
+        }
     }
 
     &__card-body {

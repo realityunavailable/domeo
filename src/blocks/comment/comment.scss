@@ -1,0 +1,214 @@
+.comment {
+
+    padding: 6.61em 22.13em 7.29em;
+
+    @include tablet {
+        padding: 10.41em 27.18em;
+    }
+
+    @include mobile {
+        padding: 13.40vw 9.65vw ;
+    }
+
+    &__container {
+        max-width: 1070px;
+        margin: 0 auto;
+    }
+
+    &__mb-30 {
+        margin-bottom: 1.56em;
+
+        @include tablet {
+            margin-bottom: 2.60em;
+        }
+
+        @include mobile {
+            margin-bottom: 6.70vw;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3.02em;
+        row-gap: 1.87em;
+
+        @include tablet {
+            flex-direction: column;
+            row-gap: 2.60em;
+
+        }
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: 6.70vw;
+            align-items: center;
+        }
+    }
+    
+    &__card {
+        width: 26.30em;
+        height: 24.01em;
+        background: $white;
+
+        @include tablet {
+            width: 45.72em;
+            height: 48.02em;
+        }
+
+        @include mobile {
+            width: 80.97vw;
+            height: 126.01vw;
+        }
+    }
+
+    &__img {
+        width: 26.30em;
+        height: 10.98em;
+
+        @include tablet {
+            width: 45.72em;
+            height: 21.97em;
+            object-fit: cover;
+        }
+
+        @include mobile {
+            width: 80.97vw;
+            height: 56.57vw;
+            object-fit: cover;
+        }
+
+        &--pos {
+            object-position: left;
+        }
+    }
+
+    &__mb-22 {
+        margin-bottom: 1.14em;
+
+        @include tablet {
+            margin-bottom: 2.29em;
+        }
+
+        @include mobile {
+            margin-bottom: 4.02vw;
+        }
+    }
+
+    &__body {
+        height: 13.02em;
+        padding: 1.14em 3.75em 0 1.25em;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            height: 26.04em;
+            padding: 2.29em 0.83em 0 1.45em;
+        }
+
+        @include mobile {
+            height: 69.44vw;
+            padding: 5.90vw 3.75vw 0 4.29vw;
+        }
+
+        &--pd {
+
+            @include tablet {
+                padding-left: 2.5em;
+                padding-right: 0.62em;
+            }
+        }
+
+        &-title {
+
+            @include mobile {
+                font-size: 4.83vw;
+            }
+        }
+    }
+
+    &__text {
+        margin-bottom: auto;
+    }
+
+    &__footer {
+        padding: 0.98em 0 ;
+        position: relative;
+
+        @include tablet {
+            padding: 1.97em 0;
+        }
+
+        @include mobile {
+            padding: 5.09vw 0;
+        }
+
+        &::before {
+            position: absolute;
+            background: #E6E6E6;
+            content: "";
+            top: 0;
+            left: -1.25em;
+            width: 123.5%;
+            height: 1px;
+
+            @include tablet {
+                left: -1.45em;
+                width: 105.5%;
+            }
+
+            @include mobile {
+                left: -4.29vw;
+                width: 111%;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            .icon-arrow {
+                transform: translateX(3px);
+            }
+        }
+
+        &-text {
+            margin-right: 0.41em;
+            color: $blue;
+            opacity: 0.7;
+            transition: opacity 500ms ease 0s;
+
+            @include tablet {
+                margin-right: 0.83em;
+            }
+
+            @include mobile {
+                margin-right: 2.14vw;
+                font-size: 4.29vw;
+            }
+
+            &:hover {
+                opacity: 1;
+
+            }
+
+        }
+
+    }
+
+}
+
+.icon-arrow {
+    width: 0.67em;
+    transition: all 400ms ease 0s;
+
+    @include tablet {
+        width: 1.35em;
+    }
+
+    @include mobile {
+        width: 3.49vw;
+    }
+}
