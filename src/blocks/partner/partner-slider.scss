@@ -1,0 +1,37 @@
+.partner {
+
+    &__slider {
+
+        margin: 0 -20.83em 0 -28.83em;
+        // height: 12.18em;
+    
+        @include tablet {
+            margin: 0px -23.43em 0 -41.43em;
+            // height: 17.70em;
+        }
+    
+        @include mobile {
+            margin: 0 -9.92vw 0 -53vw;
+            // height: 32.44vw;
+        }
+    }
+
+    &__swiper-slide  {
+        width: auto !important;
+    }
+
+    &__slide-img {
+        width: 22.39em;
+        height: 12.18em;
+
+        @include tablet {
+            width: 32.5em;
+            height: 17.70em;
+        }
+
+        @include mobile {
+            width: 60.05vw;
+            height: 32.44vw;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.partner {
+    padding: 2.13em 20.83em 4.11em; 
+    background: $white;
+
+    @include tablet {
+        padding: 3.02em 23.43em 4.16em;
+    }
+
+    @include mobile {
+        padding: 7.77vw 9.92vw 12.60vw;
+    }
+
+    &__container {
+        margin: 0 auto;
+        margin-bottom: 4.06em;
+        max-width: 1120px;
+
+        @include tablet {
+            margin-bottom: 6.77em;
+        }
+
+        @include mobile {
+            margin-bottom: 11.53vw;
+        }
+    }
+
+    &__mb-30 {
+        margin-bottom: 1.56em;
+
+        @include tablet {
+            margin-bottom: 2.60em;
+        }
+
+        @include mobile {
+            margin-bottom: 5.36vw;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1.56em;
+        column-gap: 1.56em;
+        justify-content: center;
+
+        @include tablet {
+            row-gap: 1.56em;
+            column-gap: 1.56em;
+        }
+
+        @include mobile {
+            row-gap: 2.36vw;
+            column-gap: 2.36vw;
+        }
+    }
+
+    &__img {
+        width: 10.41em;
+        height: 5.20em;
+
+        @include tablet {
+            width: 16.66em;
+            height: 8.33em;
+        }
+
+        @include mobile {
+            width: 25.1vw;
+            height: 12.60vw;
+        }
+    }
+}
+
+@import "partner-slider";
