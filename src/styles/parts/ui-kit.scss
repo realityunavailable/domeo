@@ -25,6 +25,18 @@
     }
 }
 
+.text-manrope-12 {
+    font: 300 0.62em/140% "Manrope", sans-serif;
+
+    @include tablet {
+        font-size: 1.25em;
+    }
+
+    @include mobile {
+        font-size: 2.68vw;
+    }
+}
+
 // done
 
 .text-manrope-15 {
@@ -78,6 +90,18 @@
 
     @include mobile {
         font-size: 4.021vw;
+    }
+}
+
+.text-manrope-20 {
+    font: 400 1.04em/140% "Manrope", sans-serif;
+
+    @include tablet {
+        font-size: 2.08em;
+    }
+
+    @include mobile {
+        font-size: 4.83vw;
     }
 }
 

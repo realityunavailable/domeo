@@ -4,40 +4,45 @@ footer.footer
             .footer__contact
                 a.footer__logo(href="#")
                     img.footer__logo-img(src="../assets/img/header/Group 1968.svg", alt="логотип")
-                .footer__address
-                    |г. Москва
-                    |#[br]
-                    |Лужнецкая наб., 2/4с17
-                .footer__phone
-                    | +7 (926) 673-94-72
-                a.footer__callback-btn(href="#")
+                .footer__mb-40
+                    .footer__address.text-manrope-16 
+                        |г. Москва
+                        |#[br]
+                        |Лужнецкая наб., 2/4с17
+                .footer__mb-14
+                    .footer__phone.text-manrope-18.fw-600
+                        | +7 (926) 673-94-72
+                a.btn-blue.footer__btn-blue(href="#")
+                    .btn-blue__text 
                         | Обратный звонок
-                .footer__social 
-                    a.footer__social-link(href="#") 
+                .footer__wrap 
+                    a.footer__social.footer__social--whatsapp(href="#") 
                         +svgIcon(21,21,"whatsapp","#666")
-                        .footer__social-text
+                        .footer__social-text.text-manrope-16.fw-600
                             | WhatsApp
-                    a.footer__social-link(href="#") 
+                    a.footer__social.footer__social--viber(href="#") 
                         +svgIcon(21,21,"viber","#666")
-                        .footer__social-text
+                        .footer__social-text.text-manrope-16.fw-600
                             | Viber
-                    a.footer__social-link(href="#") 
+                    a.footer__social.footer__social--telegram(href="#") 
                         +svgIcon(21,21,"telegram","#666")
-                        .footer__social-text
+                        .footer__social-text.text-manrope-16.fw-600
                             | Telegram
             .form
-                h3.form__title
-                    | Стать партнером
-                .form__text 
-                    | Оставьте заявку, менеджер пришлет вам ссылку для регистрации
+                .form__mb-9
+                    .form__title.title-manrope
+                        | Стать партнером
+                .form__mb-22
+                    .form__text.text-manrope-16 
+                        | Оставьте заявку, менеджер пришлет вам ссылку для регистрации
                 form.form__data(action="get") 
-                    input.form__name.form__input(type="text" name="" placeholder="Введите ваше имя")
-                    input.form__number.form__input(type="tel" name="" placeholder="+7 (915) 555 55 55")
-                    input.form__btn(type="submit", value="Зарегистрироваться")
-                p.form__policy 
+                    input.form__input.form__name.text-manrope-16(type="text" name="" placeholder="Введите ваше имя")
+                    input.form__input.form__number.text-manrope-16(type="tel" name="" placeholder="+7 (915) 555 55 55")
+                +btn("btn_big form__btn", "Зарегистрироваться", "#")
+                p.form__policy.text-manrope-12 
                     | Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с #[a(href="#").link-common политикой конфиденциальности]
         .footer__bottom
-            a.footer__link-main.link-common(href="#") domeo.ru
-            .docs 
-                a.footer__link.link-common.footer__link_pos(href="#") Договор оферты
-                a.footer__link.link-common(href="#") Политика конфиденциальности
+            a.footer__link-main.text-manrope-20(href="#") domeo.ru
+            .footer__bottom-wrap
+                a.footer__link.footer__link--pos.text-manrope-15(href="#") Договор оферты
+                a.footer__link.text-manrope-15(href="#") Политика конфиденциальности

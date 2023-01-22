@@ -1,23 +1,19 @@
-.link-common {
-    color: $gray;
-    text-decoration: underline;
-    transition: color $transition-off;
-
-    &:hover {
-        color: $blue;
-        transition: color $transition-on;
-    }
-}
 
 .footer {
-    background: #f6f7f8;
+
+    padding: 0 18.28em;
+
+    @include tablet {
+        padding: 0 18.33em 2.81em;
+    }
+
+    @include mobile {
+        padding: 0  9.65vw 7.51vw;
+    }
 
     &__container {
         max-width: 1217px;
         margin: 0 auto;
-        @include laptop {
-            padding: 0 20px;
-        }
     }
 
     &__top {
@@ -27,148 +23,367 @@
         @include tablet {
             flex-direction: column;
             align-items: center;
+            margin-bottom: 3.51em;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 7.51vw;
         }
     }
 
     &__contact {
+        padding: 2.39em 8.80em 1.51em 0;
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-top: 45px;
 
         @include tablet {
+            padding: 2.60em 22.18em 4.79em;
             align-items: center;
-            margin-top: 24px;
-            margin-bottom: 46px;
+        }
+
+        @include mobile {
+            padding: 4.29vw 11.80vw 7.51vw;
+            align-items: center;
         }
     }
 
     &__logo {
-        display: flex;
-        margin-bottom: 36px;
+        margin-bottom: 1.87em;
 
         @include tablet {
-            margin-bottom: 32.28px;
+            margin-bottom: 3.22em;
+        }
+
+        @include mobile {
+            margin-bottom: 7.17vw;
         }
     }
 
-    &__address {
-        margin-bottom: 40px;
-        color: $gray;
-        font: 400 16px/22px $font-manrope;
+    &__logo-img {
+        width: 9.53em;
+        height: 3.59em;
 
         @include tablet {
-            margin-bottom: 20px;
+            width: 19.06em;
+            height: 7.18em;
+        }
+
+        @include mobile {
+            width: 39.95vw;
+            height: 14.75vw;
+        }
+    }
+
+    &__mb-40 {
+        margin-bottom: 2.08em;
+
+        @include tablet {
+            margin-bottom: 2.08em;
+            text-align: center;
+        }
+
+        @include mobile {
+            margin-bottom: 4.29vw;
             text-align: center;
         }
     }
 
-    &__phone {
-        margin-bottom: 14px;
-        color: rgba(0, 0, 0, 0.8);
-        font: 600 18px/25px $font-manrope;
-    }
-
-    &__callback-btn {
-        display: block;
-        margin-bottom: 21px;
-        padding: 12px 38px;
-        color: $blue;
-        font: 600 16px/22px $font-manrope;
-        background: #e0edff;
-        border: 1px solid rgba(89, 165, 255, 0.18);
-        border-radius: 6px;
-        transition: all $transition-off;
+    &__mb-14 {
+        margin-bottom: 0.72em;
 
         @include tablet {
-            margin-bottom: 32px;
+            margin-bottom: 1.45em;
         }
 
-        &:hover {
-            color: #000;
-            background: #ffd800;
-            transition: all $transition-on;
+        @include mobile {
+            margin-bottom: 4.56vw;
+        }
+    }
+
+    .footer__btn-blue {
+        margin-bottom: 1.40em;
+        width: 11.09em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            margin-bottom: 3.33em;
+            width: 22.18em;
+        }
+
+        @include mobile {
+            margin-bottom: 4.83vw;
+            width: 57.10vw;
+        }
+
+        .btn-blue__text {
+
+            @include mobile {
+                font-size: 4.29vw;
+            }
+        }
+    }
+
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 0.78em;
+
+        @include tablet {
+            column-gap: 1.56em;
+        }
+
+        @include mobile {
+            column-gap: 2.07vw;
         }
     }
 
     &__social {
         display: flex;
-        justify-content: space-between;
-    }
-
-    &__social-link {
-        display: flex;
         align-items: center;
         justify-content: center;
-        padding: 13px 27px 12px 13px;
-        color: $gray;
-        font: 600 16px/22px $font-manrope;
-        background: #fff;
-        border: 1px solid #fff;
+        border: 1px solid $white;
         border-radius: 6px;
-        transition: all $transition-off;
+        background: $white;
+        padding: 0.62em 0 0.62em 0.67em;
 
-        &:not(:last-child) {
-            margin-right: 15px;
+        @include tablet {
+            padding: 1.25em 0 1.25em 1.35em;
         }
 
-        &:hover {
-            color: #000;
-            background: #ffd800;
-            transition: all $transition-on;
+        @include mobile {
+            padding: 2.44vw 0 2.44vw 2.63vw;
         }
 
-        &:hover .whatsapp,
-        &:hover .viber,
-        &:hover .telegram {
-            transition: all $transition-on;
-            fill: #000;
+        &--whatsapp {
+            padding-right: 1.30em;
+
+            @include tablet {
+                padding-right: 2.60em;
+            }
+
+            @include mobile {
+                padding-right: 5.09vw;
+            }
+        }
+
+        &--viber {
+            padding-right: 1.51em;
+
+            @include tablet {
+                padding-right: 3.02em;
+            }
+
+            @include mobile {
+                padding-right: 2.44vw;
+            }
+        }
+
+        &--telegram {
+            padding-right: 1.56em;
+
+            @include tablet {
+                padding-right: 3.12em;
+            }
+
+            @include mobile {
+                padding-right: 6.09vw;
+            }
+        }
+
+        &-text {
+            @include mobile {
+                font-size: 3.22vw;
+            }
         }
     }
 
     &__bottom {
+        padding: 1.25em 0 2.13em;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 31px 0 22px 0;
-        border-top: 1px solid #dbdbdb;
+        border-top: 1px solid #DBDBDB;
 
         @include tablet {
-            max-width: 610px;
-            margin: 0 auto;
+            padding: 1.59em 0 3.33em;
+        }
+
+        @include mobile {
+            padding: 4.83vw 0 8.04vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
-    &__link {
-        font: 300 15px/140% $font-manrope;
+    &__bottom-wrap {
 
-        &_pos {
-            margin-right: 50px;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
-    &__link-main {
-        font: 400 20px/140% $font-manrope;
-        text-decoration: none;
+    &__link--pos {
+        margin-right: 3.3em;
+
+        @include tablet {
+            margin-right: 3.3em;
+        }
+
+        @include mobile {
+            margin-right: 0;
+            margin-bottom: 2.41vw;
+            margin-top: 4.83vw;
+        }
     }
 }
+
+.form {
+    padding: 1.92em 5.05em 1.40em;
+    background: $white;
+
+    @include tablet {
+        padding: 2.61em 10.41em 1.97em;
+    }
+
+    @include mobile {
+        padding: 6.9vw 2.68vw 3vw ;
+    }
+
+    &__mb-9 {
+        margin-bottom: 0.46em;
+
+        @include tablet {
+            margin-bottom: 0.83em;
+        }
+
+        @include mobile {
+            margin-bottom: 2.68vw;
+        }
+    }
+
+    &__title {
+        font-size: 1.04em;
+
+        @include tablet {
+            font-size: 2.08em;
+        }
+
+        @include mobile {
+            font-size: 4.83vw;
+        }
+    }
+
+    &__mb-22 {
+        margin-bottom: 1.14em;
+        width: 15em;
+
+        @include tablet {
+            width: 30em;
+            margin-bottom: 2.2em;
+        }
+
+        @include mobile {
+            width: 66.76vw;
+            margin-bottom: 3.56vw;
+        }
+    }
+
+    &__input {
+        padding: 0.93em 0.93em 1.04em;
+        background: #EDF1F6;
+        border-radius: 6px;
+
+        @include mobile {
+            padding: 4.02vw 5.77vw;
+        }
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__btn {
+        margin-bottom: 0.67em;
+        width: 21.40em;
+        display: flex;
+        justify-content: center;
+
+        @include tablet {
+            margin-bottom: 1.35em;
+            width: 42.70em;
+        }
+
+        @include mobile {
+            margin-bottom: 2.68vw;
+            width: 75.34vw;
+        }
+    }
+
+    &__name {
+        margin-bottom: 1.1em;
+
+        @include tablet {
+            margin-bottom: 1em;
+        }
+
+        @include mobile {
+            margin-bottom: 2.68vw;
+        }
+    }
+
+    &__number {
+        margin-bottom: 1em;
+
+        @include tablet {
+            margin-bottom: 1.16em;
+        }
+
+        @include mobile {
+            margin-bottom: 2.68vw;
+        }
+    }
+
+    &__policy {
+        width: 27.08em;
+        color: rgba(0, 0, 0, 0.4);
+
+        @include tablet {
+            width: 27.16em;
+        }
+
+        @include mobile {
+            width: 72.39vw;
+        }
+    }
+
+}
+
+
 
 .whatsapp,
 .viber,
 .telegram {
-    transition: all $transition-off;
+    margin-right: 0.57em;
+
+    @include tablet {
+        margin-right: 1.14em;
+    }
+
+    @include mobile {
+        margin-right: 2.41vw;
+        width: 4.29vw;
+        height: 4.29vw;
+    }
 }
 
-.whatsapp {
-    margin-right: 10px;
-}
-
-.viber {
-    margin-right: 11px;
-}
-
-.telegram {
-    margin-right: 14px;
-}
-
-@import "form.scss";
+@import "form";
