@@ -151,6 +151,7 @@
         border-radius: 6px;
         background: $white;
         padding: 0.62em 0 0.62em 0.67em;
+        transition: background-color 300ms ease 0s;
 
         @include tablet {
             padding: 1.25em 0 1.25em 1.35em;
@@ -158,6 +159,11 @@
 
         @include mobile {
             padding: 2.44vw 0 2.44vw 2.63vw;
+        }
+
+        &:hover {
+            background: rgba(0,0,0, 0.1);
+            border: 1px solid rgba(0,0,0, 0.1);
         }
 
         &--whatsapp {
@@ -386,4 +392,3 @@
     }
 }
 
-@import "form";

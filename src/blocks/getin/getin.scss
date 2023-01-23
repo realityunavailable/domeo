@@ -141,6 +141,7 @@
     border-radius: 6px;
     padding: 0.62em 1.09em;
     display: block;
+    transition: background-color 300ms ease 0s;
 
     @include tablet {
         padding: 1.25em 2.18em;
@@ -148,6 +149,10 @@
 
     @include mobile {
         padding: 3.22vw 7.5vw 3.22vw ;
+    }
+
+    &:hover {
+        background: rgba(89, 165, 255, 0.2);
     }
 
     &__text {

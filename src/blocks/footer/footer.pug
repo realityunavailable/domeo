@@ -12,7 +12,7 @@ footer.footer
                 .footer__mb-14
                     .footer__phone.text-manrope-18.fw-600
                         | +7 (926) 673-94-72
-                a.btn-blue.footer__btn-blue(href="#")
+                a.btn-blue.footer__btn-blue.js-popup-link(href="#popup_5")
                     .btn-blue__text 
                         | Обратный звонок
                 .footer__wrap 
@@ -38,7 +38,7 @@ footer.footer
                 form.form__data(action="get") 
                     input.form__input.form__name.text-manrope-16(type="text" name="" placeholder="Введите ваше имя")
                     input.form__input.form__number.text-manrope-16(type="tel" name="" placeholder="+7 (915) 555 55 55")
-                +btn("btn_big form__btn", "Зарегистрироваться", "#")
+                +btn("btn_big form__btn js-popup-link", "Зарегистрироваться", "#popup_6")
                 p.form__policy.text-manrope-12 
                     | Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с #[a(href="#").link-common политикой конфиденциальности]
         .footer__bottom

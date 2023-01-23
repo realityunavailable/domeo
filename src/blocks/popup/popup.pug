@@ -148,4 +148,55 @@
                     |от чернухи, до чистовой отделки, особенно можно обратить внимание на электрику и 
                     |сантехнику (так как разводка освещения и розеток крайне важна, инженерия – это вообще 
                     |самое дорогое в ремонте) и декор и облицовку.
+.popup.popup-form#popup_5    
+    .popup__body.popup-form__body 
+        .popup__content.popup-form__content 
+            a.popup__close.popup-form__close.js-popup__close(href="#")
+                +svgIcon(15,15,"icon-close","")
+            .popup-form__mb-14
+                .popup-form__title.text-manrope-30 
+                    |Обратный звонок
+            .popup-form__mb-39 
+                .popup-form__subtitle.text-manrope-18
+                    |Введите свой номер телефона и наш менеджер перезвонит 
+                    |вам в течение 15 минут
+            form.form__data(action="get") 
+                input.form__input.form__number.text-manrope-16(type="tel" name="" placeholder="+7 (915) 555 55 55")
+            +btn("btn_big form__btn popup-form__btn", "Заказать звонок", "#")
+            p.form__policy.popup-form__policy.text-manrope-12 
+                    | Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с #[a(href="#").link-common политикой конфиденциальности]
+.popup.popup-form#popup_6    
+    .popup__body.popup-form__body 
+        .popup__content.popup-form__content 
+            a.popup__close.popup-form__close.js-popup__close(href="#")
+                +svgIcon(15,15,"icon-close","")
+            .popup-form__mb-14
+                .popup-form__title.text-manrope-30 
+                    |Стать партнером
+            .popup-form__mb-39 
+                .popup-form__subtitle.text-manrope-18
+                    |Для регистрации отправьте заявку 
+                    |и наш менеджер перезвонит вам в течение 15 минут 
+            form.form__data(action="get") 
+                input.form__input.form__number.text-manrope-16(type="tel" name="" placeholder="+7 (915) 555 55 55")
+            +btn("btn_big form__btn popup-form__btn", "Отправить заявку", "#")
+            p.form__policy.popup-form__policy.text-manrope-12 
+                    | Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с #[a(href="#").link-common политикой конфиденциальности]
+.popup.popup-form#popup_7    
+    .popup__body.popup-form__body 
+        .popup__content.popup-form__content 
+            a.popup__close.popup-form__close.js-popup__close(href="#")
+                +svgIcon(15,15,"icon-close","")
+            .popup-form__mb-14
+                .popup-form__title.text-manrope-30 
+                    |Экскурсия по офису
+            .popup-form__mb-39 
+                .popup-form__subtitle.text-manrope-18
+                    |Для записи на экскурсию отправьте заявку
+                    |менеджер перезвонит вам в течение 5 минут
+            form.form__data(action="get") 
+                input.form__input.form__number.text-manrope-16(type="tel" name="" placeholder="+7 (915) 555 55 55")
+            +btn("btn_big form__btn popup-form__btn", "Отправить заявку", "#")
+            p.form__policy.popup-form__policy.text-manrope-12 
+                    | Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с #[a(href="#").link-common политикой конфиденциальности]
 

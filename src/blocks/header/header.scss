@@ -67,15 +67,11 @@
     }
 
     &__cabinet {
-        transition: all $transition-off;
+        transition: background-color 300ms ease 0s;
+        border-radius: 0.31em;
 
-        &:hover .header__btn,
-        &:hover .header__btn-text,
-        &:hover .cabinet {
-            color: #000;
-            background: #ffd800;
-            transition: all $transition-on;
-            fill: #000;
+        &:hover {
+            background: rgba(89, 165, 255, 0.2);
         }
     }
 
@@ -83,7 +79,7 @@
         display: flex;
         align-items: center;
         padding: 0.83em 1.77em;
-        background: #eef5ff;
+        background: rgba(89, 165, 255, 0.1);
         border-radius: 0.31em;
 
         @include tablet {
