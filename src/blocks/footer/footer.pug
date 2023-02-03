@@ -35,10 +35,21 @@ footer.footer
                 .form__mb-22
                     .form__text.text-manrope-16 
                         | Оставьте заявку, менеджер пришлет вам ссылку для регистрации
-                form.form__data(action="get") 
-                    input.form__input.form__name.text-manrope-16(type="text" name="" placeholder="Введите ваше имя")
-                    input.form__input.form__number.text-manrope-16(type="tel" name="" placeholder="+7 (915) 555 55 55")
-                +btn("btn_big form__btn js-popup-link", "Зарегистрироваться", "#popup_6")
+                form.form__data.form(action="#" method="POST" enctype="multipart/form-data") 
+                    input.form__input.form__name.input-name.text-manrope-16(
+                            type="text" 
+                            data-validate-field="name" 
+                            name="name" 
+                            placeholder="Введите ваше имя"
+                        )
+                    input.form__input.form__number.input-tel.text-manrope-16(
+                            type="tel"
+                            placeholder="+7 (915) 555 55 55"
+                            data-validate-field="tel" 
+                            name="phone"
+                        )
+                    button.btn.btn_big.form__btn.button(data-pop="#popup_8") Зарегистрироваться
+                //- +btn("btn_big form__btn js-popup-link", "Зарегистрироваться", "#popup_6")
                 p.form__policy.text-manrope-12 
                     | Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с #[a(href="#").link-common политикой конфиденциальности]
         .footer__bottom

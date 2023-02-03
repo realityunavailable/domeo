@@ -1,15 +1,10 @@
 const path = require("path");
-const { VueLoaderPlugin } = require("vue-loader");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const webpack = require("webpack");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const fs = require("fs");
 const TerserPlugin = require("terser-webpack-plugin");
 const StylelintPlugin = require("stylelint-webpack-plugin");
-const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 
 const PATHS = {
     index: path.join(__dirname, "../src/scripts/"),
@@ -18,18 +13,10 @@ const PATHS = {
 };
 
 const isDev = process.env.NODE_ENV === "development";
-const isProd = !isDev;
 
 const filename = (ext) =>
     isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
 
-const PAGES_DIR = `${PATHS.src}`;
-const PAGES = fs
-    .readdirSync(PAGES_DIR)
-    .filter((fileName) => fileName.endsWith(".pug"));
-
-
-const smp = new SpeedMeasurePlugin();
 
 module.exports = {
     externals: {
@@ -78,15 +65,6 @@ module.exports = {
                         },
                     },
                 ],
-            },
-            {
-                test: /\.vue$/,
-                loader: "vue-loader",
-                options: {
-                    loader: {
-                        scss: "vue-style-loader!css-loader!sass-loader",
-                    },
-                },
             },
             {
                 test: /\.css$/,
@@ -154,32 +132,6 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(?:png|jpg|jpeg|gif)$/,
-                use: [
-                    {
-                        loader: "image-webpack-loader",
-                        options: {
-                            mozjpeg: {
-                                progressive: true,
-                            },
-                            optipng: {
-                                enabled: false,
-                            },
-                            pngquant: {
-                                quality: [0.65, 0.9],
-                                speed: 4,
-                            },
-                            gifsicle: {
-                                interlaced: false,
-                            },
-                            webp: {
-                                quality: 75,
-                            },
-                        },
-                    },
-                ],
-            },
-            {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: "file-loader",
                 options: {
@@ -190,19 +142,21 @@ module.exports = {
         ],
     },
     plugins: [
-        new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
             filename: `./css/${filename("css")}`,
         }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: `src/pages/index.pug`,
-            filename: `${`index.pug`.replace(/\.pug/, ".html")}`,
+            // filename: `${`index.pug`.replace(/\.pug/, ".html")}`,
             chunks: ["app"],
         }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: `${PATHS.src}/assets/static`, to: `assets/static` },
+                { from: `${PATHS.src}/mail.php`, to: `./` },
+                { from: `${PATHS.src}/phpmailer`, to: `./phpmailer` },
+                { from: `${PATHS.src}/libs`, to: `./libs` },
             ],
         }),
         new StylelintPlugin({

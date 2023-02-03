@@ -199,4 +199,17 @@
             +btn("btn_big form__btn popup-form__btn", "Отправить заявку", "#")
             p.form__policy.popup-form__policy.text-manrope-12 
                     | Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с #[a(href="#").link-common политикой конфиденциальности]
+.popup.popup-form#popup_8    
+    .popup__body.popup-form__body 
+        .popup__content.popup-form__content 
+            a.popup__close.popup-form__close.js-popup__close(href="#")
+                +svgIcon(15,15,"icon-close","")
+            .popup-form__mb-14
+                .popup-form__title.text-manrope-30 
+                    |Спасибо! Мы получили вашу заявку
+            .popup-form__mb-39 
+                .popup-form__subtitle.text-manrope-18
+                    |Наш лучший специалист свяжется с Вами как можно скорее. 
+                    |Обычно это занимает не более 15 минут. Проверьте, 
+                    |что Ваш телефон включен и не находится в беззвучном режиме.
 

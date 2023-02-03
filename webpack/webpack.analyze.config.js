@@ -9,17 +9,7 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.pug$/,
-                oneOf: [
-                    // this applies to <template lang="pug"> in Vue components
-                    {
-                        resourceQuery: /^\?vue/,
-                        use: ["pug-plain-loader"],
-                    },
-                    // this applies to pug imports inside JavaScript
-                    {
-                        use: ["html-loader", "pug-html-loader"]
-                    }
-                ],
+                use: ["html-loader", "pug-html-loader"]
             },
         ]
     },
